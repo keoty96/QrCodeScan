@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, StyleSheet, ScrollView } from 'react-native';
+import React from 'react';
+import { View, TextInput, StyleSheet, ScrollView } from 'react-native';
 import MainButton from './components/buttons/MainButton';
 import { useList } from './components/context/Hooks';
 
@@ -7,22 +7,12 @@ function Form({ route, navigation }) {
 
     const data = route.params.codeData;
     const result = data.split('|');
-    const [objectData, setObject] = useState({});
     const [, addData] = useList();
 
     const saveToList = () => {
         addData(result);
         navigation.navigate("List");
     }
-
-    // useEffect(() => {
-    //     result.map((item, index) => {
-    //         const newObject = Object.assign({}, objectData);
-    //         newObject[index] = item;
-    //         setObject(newObject);
-    //     });
-
-    // }, []);
 
     return (
         <View style={styles.container}>
