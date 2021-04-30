@@ -1,6 +1,6 @@
 # QrCodeScan
 
-Aplicación desarrollada utilizando React Native, Expo.
+Prueba de Aplicación desarrollada utilizando React Native, Expo.
 
 # Instalación
 
@@ -12,3 +12,5 @@ Aplicación desarrollada utilizando React Native, Expo.
 4. Escanear código QR que brinda Expo Dev Tools.
     - android: la aplicación Expo Go brinda servicio para escanear codigo QR de la aplicación.
     - ios: escanear código QR con la camara del dispositivo iphone.
+
+- Realizado por: Katherine Osorio.
